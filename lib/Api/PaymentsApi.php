@@ -391,6 +391,11 @@ class PaymentsApi
             $headers['Authorization'] = $apiKey;
         }
 
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
+        }
+
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -685,6 +690,11 @@ class PaymentsApi
         $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
@@ -983,6 +993,11 @@ class PaymentsApi
             $headers['Authorization'] = $apiKey;
         }
 
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
+        }
+
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -1261,9 +1276,14 @@ class PaymentsApi
         }
 
         // this endpoint requires API key authentication
-        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
+        $apiKey = $this->config->getApiKeyWithPrefix('Authorization'); 
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
@@ -1549,6 +1569,11 @@ class PaymentsApi
         $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
@@ -1847,6 +1872,11 @@ class PaymentsApi
             $headers['Authorization'] = $apiKey;
         }
 
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
+        }
+
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -2141,6 +2171,11 @@ class PaymentsApi
         $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
@@ -2439,6 +2474,11 @@ class PaymentsApi
             $headers['Authorization'] = $apiKey;
         }
 
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
+        }
+
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -2733,6 +2773,11 @@ class PaymentsApi
         $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
@@ -3035,6 +3080,11 @@ class PaymentsApi
         $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
         if ($apiKey !== null) {
             $headers['Authorization'] = $apiKey;
+        }
+
+        $moneiAccoutId = $this->config->getApiKeyWithPrefix('MONEI-Account-ID');
+        if ($moneiAccoutId !== null) {
+            $headers['MONEI-Account-ID'] = $moneiAccoutId;
         }
 
         $defaultHeaders = [];
